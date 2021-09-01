@@ -28,31 +28,59 @@ height: 46px;
 background-color: #000;
 
 }
+#nav .subnav{
+    list-style-type: none;
+    /* bo dau cham truoc li */
+}
 #nav{
 
 }
-#nav li{
+/* li cap 1 */
+#nav > li{
+   
     display: inline-block;
+    position: relative;
 }
-#nav li a{
-    display: inline-block;
+#nav li{
+    
+  position: relative;
+ 
+    /* inline-flex */
+}
+#nav >li> a{
     color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: block;
+   
     text-decoration: none;
     line-height: 46px;
     /* line-height chieu cao cua chu */
     padding: 0 24px;
 
 }
-#nav li:hover a{
+
+#nav> li:hover> a,
+#nav .subnav li:hover a{
     color: #000;
     background-color: #ccc;
 }
 #nav .subnav{
-    display: none;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+}
+#nav .subnav a{
+    line-height: 38px;
+    padding: 0 12px;
+    color: #000
 }
 
 #slider{
-
+min-height: 500px;
+background-color: #333;
 
 }
 
