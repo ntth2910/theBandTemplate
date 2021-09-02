@@ -51,6 +51,9 @@ background-color: #000;
     color: #fff;
     text-transform: uppercase;
 }
+#nav li:hover .subnav{
+    display: inline-block;
+}
 
 #nav li a{
     display: block;
@@ -68,9 +71,15 @@ background-color: #000;
     background-color: #ccc;
 }
 #nav .subnav{
-    display: block;
+    /* display: none ; */
+    min-width: 160px;
     position: absolute;
+    /* top 100% cua absolute de can chinh voi the cha cua no */
+    top: 100%;
+    left: 0;
     background-color: #fff;
+    /* bong do */
+    box-shadow:  0 0 10px rgba(22, 22, 105, 0.3);
 }
 #nav .subnav a{
     line-height: 38px;
@@ -79,8 +88,8 @@ background-color: #000;
 }
 
 #slider{
-min-height: 500px;
-background-color: #333;
+/* min-height: 500px;
+background-color: #333; */
 
 }
 
