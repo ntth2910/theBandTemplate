@@ -33,17 +33,20 @@ background-color: #000;
     /* bo dau cham truoc li */
 }
 #nav{
-
+display: inline-block;
 }
 /* li cap 1 */
 #nav > li{
    
     display: inline-block;
+    /* display inline-block chi dai toi het chu more */
     position: relative;
 }
 #nav li{
     
   position: relative;
+  /* khi bo position di cung bth khong chi gi het */
+  
  
     /* inline-flex */
 }
@@ -53,6 +56,7 @@ background-color: #000;
 }
 #nav li:hover .subnav{
     display: inline-block;
+    /* khi bo display di bth kh bi chi het */
 }
 
 #nav li a{
@@ -69,9 +73,11 @@ background-color: #000;
 #nav .subnav li:hover a{
     color: #000;
     background-color: #ccc;
+  
 }
+
 #nav .subnav{
-    /* display: none ; */
+    display: none ;
     min-width: 160px;
     position: absolute;
     /* top 100% cua absolute de can chinh voi the cha cua no */
@@ -84,7 +90,32 @@ background-color: #000;
 #nav .subnav a{
     line-height: 38px;
     padding: 0 12px;
-    color: #000
+    color: #000;
+   
+}
+#nav .nav-arrow-down{
+    /* icon */
+    font-size: 12px;
+}
+#header .search-btn{
+    /* float: right; */
+/* co the dung position thay cho float */
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0 21px;
+    
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-btn .search-icon{
+color: #fff;
+font-size: 20px;
+line-height: 46px;
+
 }
 
 #slider{
