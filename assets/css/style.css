@@ -27,6 +27,15 @@ html{
 height: 46px;
 background-color: #000;
 
+/* thuoc tinh fixed an theo man hinh trinh duyet */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+
+z-index: 1;
+
+
 }
 #nav .subnav{
     list-style-type: none;
@@ -119,11 +128,48 @@ line-height: 46px;
 }
 
 #slider{
+    position: relative;
 /* min-height: 500px;
 background-color: #333; */
+margin-top: 46px;
+/* margin-top de cho header khong chiem slider */
 
+padding-top: 50%;
+/* khi padding top dung gia tri phan tram thi se bang 50% cua chinh nó */
+
+background-image: url('/assets/img/slider/slider1.jpg');
+background-size: 100%;
+
+/* shorthand */
+/* background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat; */
 }
+#slider .text-content{
+    /* them position:absolute vo phan text-content
+    de phan nay k bi chiem phan content cua slider */
+    position: absolute;
+    bottom: 48px;
 
+    /* cach 1: can giua voi position */
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+    /* cach2: width: 100% */
+    /* width: 100; */
+
+    /* cach 3: cho left:0 right:0 */
+    left: 0;
+    right: 0;
+    text-align: center;
+   
+}
+#slider .text-heading{
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: normal;
+}
+#slider .text-decription{
+    font-size: 15px;
+}
 #content{
 
 
