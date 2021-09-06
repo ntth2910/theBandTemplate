@@ -174,6 +174,39 @@ background-size: 100%;
 
 
 }
+#content .content-section{
+    width: 800px; 
+    padding: 64px 0;
+    
+    /* margin left right de can giua ca cuc div content-section*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+    /* khoang cach giua cac chu dung leter-spacing */
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.5;
+    
+}
+#content .about-text{
+   font-size: 15px;
+   margin-top: 25px;
+   text-align: justify;
+   /* text-align:justify de can deu hai ben cua van ban */
+   line-height: 1.6;
+}
 
 #footer{
 
