@@ -207,6 +207,28 @@ text-transform: uppercase;
    /* text-align:justify de can deu hai ben cua van ban */
    line-height: 1.6;
 }
+#content .members-list{
+    margin-top: 48px;
+    overflow: hidden;
+    /* overflow de khong bi mat the con khi dung float */
+}
+#content .members-list .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+  
+    /* float:left de keo anh thanh vien len cung mot hang */
+
+}
+#content .members-list .member-name{
+    font-size: 15px;
+    
+}
+#content .members-list .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
 
 #footer{
 
