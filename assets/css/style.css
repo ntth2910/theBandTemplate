@@ -313,7 +313,8 @@ line-height: 1.4;
 .place-buy-btn{
     color: #fff;
     background-color: #000;
-    text-decoration: none;
+    
+    border: none;
     padding: 11px 16px;
     display: inline-block;
     /* display:inline-block de khi padding khong che the p */
@@ -338,10 +339,13 @@ line-height: 1.4;
     /* 4 huong =0 tu dong width height phu kin */
 
     background: rgba(0, 0, 0, 0.3);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     /* flexbox */
+}
+.modal.open{
+    display: flex;
 }
 .modal-container{
 background: #fff;
@@ -349,6 +353,8 @@ width: 900px;
 max-width: calc(100%-32px);
 min-height: 200px;
 position: relative;
+animation: modalFadeIn ease 0.5s;
+/* animation chuyen dong modal */
 }
 
 .modal-container .modal-close{
@@ -360,6 +366,7 @@ position: relative;
     cursor: pointer;
     opacity: 0.6;
 }
+
 .modal-container .modal-close:hover{
     opacity: 1;
     color: #000;
@@ -412,4 +419,17 @@ position: relative;
 }
 .modal-footer a{
     color: #2196F3;
+}
+/* animation */
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+transform: translateY(-140px);
+/* lui lai de chay xuong */
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        /* tra ve vi tri ban dau */
+    }
 }
